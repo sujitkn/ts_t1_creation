@@ -30,6 +30,9 @@ To add a test, simply create a module with all desired test functions in it. Pla
 
 	def test_generate_campaign():
 	    """This demonstrates a sample test function for your test case purposes"""
+	    import terminalone
+    	    t1 = terminalone.T1(user_name, pass_word, api_key=api_key, api_base=api_url, auth_method="cookie" )
+    	    campaign=generate_campaign(generate_advertiser, t1)
 	    assert 1 == 1
 
 
